@@ -45,3 +45,25 @@
 	visibility: visible;
 	opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .campaña {
+    position: static;
+    display: none;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu li:hover .campaña {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu li {
+    display: block;
+  }
+}
