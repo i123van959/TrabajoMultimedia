@@ -8,3 +8,17 @@ body {
 body{
     background-color: lightgreen;
 }
+.portada {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    position: relative;
+    z-index: 1;
+}
+
+    .portada .logo {
+        max-height: calc(100vh - 80px);
+        width: auto;
+        object-fit: contain;
+    }
