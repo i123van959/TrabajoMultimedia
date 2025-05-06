@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'ZeldaFont';
-    src: url('../fonts/zelda-font.woff') format('woff');
+    src: url('Fuente Zelda Multimedia') format('woff');
 }
-
 body {
-    font-family: 'ZeldaFont', sans-serif;
+  font-family: 'ZeldaFont', sans-serif;
+}
+body{
+    background-color: lightgreen;
 }
