@@ -10,7 +10,8 @@
 
 body {
     font-family: 'ZeldaFont', sans-serif;
-    background-color: lightgreen;
+    background: url("../img/fondo web.jpg") no-repeat center center fixed;
+    background-size: cover;
     padding-top: 30px;
     color: #222;
     font-family: 'ZeldaFont', sans-serif;
