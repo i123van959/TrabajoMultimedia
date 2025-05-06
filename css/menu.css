@@ -1,85 +1,55 @@
-* {
-	margin: 0;
-	padding: 0;
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #111;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
-/* 📌 MENÚ FIJO SUPERIOR */
-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
+.simple-sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 200px;
+    height: 100vh;
+    background-color: #ffffffea;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1500;
 }
 
-/* 📄 MENÚ PRINCIPAL */
-.menu {
-	background-color: #111;
-	display: flex;
-	justify-content: center;
-	list-style: none;
-}
+    .simple-sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-	.menu > li {
-		position: relative;
-		display: inline-block;
-	}
+    .simple-sidebar li {
+        padding: 5px 20px;
+    }
 
-		.menu > li > a {
-			display: block;
-			padding: 15px 25px;
-			font-weight: bold;
-			font-size: 16px;
-			color: #6eff6e; /* verde llamativo */
-			text-decoration: none;
-			transition: color 0.3s ease;
-			font-family: 'ZeldaFont', sans-serif;
-		}
+        .simple-sidebar li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
 
-	.menu li a:hover {
-		color: white;
-	}
+            .simple-sidebar li a:hover {
+                color: #6eff6e;
+            }
 
-/* 🔽 SUBMENÚ */
-.campaña {
-	position: absolute;
-	background-color: rgb(103, 163, 121);
-	width: 100%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-
-	.campaña li a {
-		display: block;
-		padding: 5px;
-		color: #fff;
-		font-family: 'Open Sans', sans-serif;
-		text-decoration: none;
-	}
-
-.menu li:hover .campaña {
-	visibility: visible;
-	opacity: 1;
-}
-
-/* 📱 RESPONSIVE MENU */
-@media (max-width: 768px) {
-	.campaña {
-		position: static;
-		display: none;
-		visibility: visible;
-		opacity: 1;
-	}
-
-	.menu li:hover .campaña {
-		display: block;
-	}
-
-	.menu {
-		flex-direction: column;
-	}
-
-		.menu li {
-			display: block;
-		}
+#menu-toggle:checked ~ .simple-sidebar {
+    left: 0;
 }

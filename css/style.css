@@ -1,4 +1,9 @@
-﻿@font-face {
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
     font-family: 'ZeldaFont';
     src: url('../fonts/Fuente Zelda Multimedia.woff') format('woff');
 }
@@ -13,8 +18,9 @@ body {
     margin: 0;
 }
 
+
 /*TODAS LAS SECCIONES*/
-section {
+section:not(.portada) {
     padding: 80px 20px;
     margin: 0 auto;
     max-width: 1000px;
@@ -22,26 +28,29 @@ section {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
 /* PORTADA INICIAL CON LOGO */
 .portada {
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: none;
+    width: auto;
+    max-width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
+    justify-content: center;
+    background-color: transparent; /* sin fondo */
+    overflow: hidden;
 }
 
-    .portada .logo {
-        max-height: calc(100vh - 80px);
-        width: auto;
-        object-fit: contain;
-        display: block;
-    }
+.logo {
+    height: 95vh; /* o lo que quieras */
+    max-width: 95vw;
+    object-fit: contain;
+    display: block;
+    border: none;
+    box-shadow: none;
+    transition: none;
+    transform: none;
+}
     
 /*TITULOS*/
 section h2 {
