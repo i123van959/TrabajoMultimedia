@@ -21,7 +21,7 @@ body {
 
 
 /*TODAS LAS SECCIONES*/
-section:not(.portada) {
+section:not(.portada, .nintendo) {
     padding: 80px 20px;
     margin: 0 auto;
     max-width: 1000px;
@@ -51,6 +51,13 @@ section:not(.portada) {
     box-shadow: none;
     transition: none;
     transform: none;
+}
+
+.nintendo {
+    width: 100px !important;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
     
 /*TITULOS*/
