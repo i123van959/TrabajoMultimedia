@@ -7,9 +7,22 @@ body {
     font-family: 'ZeldaFont', sans-serif;
     background-color: lightgreen;
     padding-top: 30px;
+    color: #222;
+    font-family: 'ZeldaFont', sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* 🎮 PORTADA INICIAL CON LOGO */
+/*TODAS LAS SECCIONES*/
+section {
+    padding: 80px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+/* PORTADA INICIAL CON LOGO */
 .portada {
     height: 100vh;
     margin: 0;
@@ -29,8 +42,52 @@ body {
         object-fit: contain;
         display: block;
     }
+    
+/*TITULOS*/
+section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/*PARRAFOS*/
+section p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*SEPARADOR ENTRE SECCIONES*/
+.separador {
+    height: 30px;
+}
+
+/* IMÁGENES */
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+    section img:hover {
+        transform: scale(1.02);
+    }
+
+/* VIDEO */
+section video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/*SCROLLBAR*/
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
