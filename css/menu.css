@@ -1,30 +1,46 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-.menu{
-    background-color: rgb(103, 163, 121);
+/* 📌 MENÚ FIJO SUPERIOR */
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color:black;
-	text-decoration: none;
-}
-.menu li{
-    position: relative;
-	display: inline-block;
-}
-.menu li a:hover{
-	color: #CE7D35;
-	transition: all .3s;
+/* 📄 MENÚ PRINCIPAL */
+.menu {
+	background-color: #111;
+	display: flex;
+	justify-content: center;
+	list-style: none;
 }
 
-/* Submenu*/
+	.menu > li {
+		position: relative;
+		display: inline-block;
+	}
 
-.campaña{
+		.menu > li > a {
+			display: block;
+			padding: 15px 25px;
+			font-weight: bold;
+			font-size: 16px;
+			color: #6eff6e; /* verde llamativo */
+			text-decoration: none;
+			transition: color 0.3s ease;
+			font-family: 'ZeldaFont', sans-serif;
+		}
+
+	.menu li a:hover {
+		color: white;
+	}
+
+/* 🔽 SUBMENÚ */
+.campaña {
 	position: absolute;
 	background-color: rgb(103, 163, 121);
 	width: 100%;
@@ -33,48 +49,37 @@
 	transition: opacity 1.5s;
 }
 
-.campaña li a{
-	display: block;
-	padding: 5px;
-	color: #fff;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
+	.campaña li a {
+		display: block;
+		padding: 5px;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		text-decoration: none;
+	}
 
-.menu li:hover .campaña{
+.menu li:hover .campaña {
 	visibility: visible;
 	opacity: 1;
 }
 
+/* 📱 RESPONSIVE MENU */
 @media (max-width: 768px) {
-  .campaña {
-    position: static;
-    display: none;
-    visibility: visible;
-    opacity: 1;
-  }
+	.campaña {
+		position: static;
+		display: none;
+		visibility: visible;
+		opacity: 1;
+	}
 
-  .menu li:hover .campaña {
-    display: block;
-  }
+	.menu li:hover .campaña {
+		display: block;
+	}
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-  }
+	.menu {
+		flex-direction: column;
+	}
 
-  .menu li {
-    display: block;
-  }
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-}
-
-body {
-	padding-top: 60px; /* para que el contenido no se oculte debajo del menú */
+		.menu li {
+			display: block;
+		}
 }

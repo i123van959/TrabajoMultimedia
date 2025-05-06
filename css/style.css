@@ -1,18 +1,24 @@
-@font-face {
+﻿@font-face {
     font-family: 'ZeldaFont';
-    src: url('fonts/Fuente Zelda Multimedia.woff') format('woff');
+    src: url('../fonts/Fuente Zelda Multimedia.woff') format('woff');
 }
+
 body {
-  font-family: 'ZeldaFont', sans-serif;
-}
-body{
+    font-family: 'ZeldaFont', sans-serif;
     background-color: lightgreen;
+    padding-top: 30px;
 }
+
+/* 🎮 PORTADA INICIAL CON LOGO */
 .portada {
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     z-index: 1;
 }
@@ -21,4 +27,18 @@ body{
         max-height: calc(100vh - 80px);
         width: auto;
         object-fit: contain;
+        display: block;
     }
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
