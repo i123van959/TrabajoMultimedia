@@ -38,7 +38,7 @@ section:not(.portada):not(.nintendo) {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    overflow: hidden; /*Para que no aparezca la mierda de borde*/
+    overflow: hidden; /*Para que no aparezca el borde*/
     object-fit: contain;
     display: block;
 }
