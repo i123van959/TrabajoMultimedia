@@ -21,6 +21,10 @@
     padding: 1rem;
 }
 
+.subtitulo {
+  font-family: 'ZeldaFont', Arial, sans-serif;
+}
+
 body {
     font-family: 'ZeldaFontBody', sans-serif;
     background: url("../img/fondo web.jpg") no-repeat center center fixed;
