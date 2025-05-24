@@ -15,10 +15,28 @@
 
 .titulo-principal {
     font-family: 'ZeldaFont', sans-serif;
-    font-size: 7rem;
+    font-size: 10rem;
     color: red;
     text-align: center;
     padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .titulo-principal {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-principal {
+    font-size: 2.8rem;
+  }
 }
 
 .subtitulo {
