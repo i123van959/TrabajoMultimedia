@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'ZeldaFont';
-    src: url('../fonts/Fuente Zelda Multimedia.woff') format('woff');
+    src: url('../fonts/Birdfont/Fuente Zelda.ttf') format('truetype');
 }
 
 body {
