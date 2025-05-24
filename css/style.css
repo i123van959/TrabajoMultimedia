@@ -23,19 +23,19 @@
 
 @media (max-width: 1024px) {
   .titulo-principal {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 600px) {
   .titulo-principal {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 400px) {
   .titulo-principal {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
