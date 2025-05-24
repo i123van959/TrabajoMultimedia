@@ -8,6 +8,11 @@
     src: url('../fonts/Birdfont/Fuente Zelda.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'ZeldaFontBody';
+    src: url('../fonts/Fuente Zelda Multimedia.woff') format('woff');
+}
+
 .titulo-principal {
     font-family: 'ZeldaFont', sans-serif;
     font-size: 3rem;
@@ -17,7 +22,7 @@
 }
 
 body {
-    font-family: 'ZeldaFont', sans-serif;
+    font-family: 'ZeldaFontBody', sans-serif;
     background: url("../img/fondo web.jpg") no-repeat center center fixed;
     background-size: cover;
     padding-top: 30px;
