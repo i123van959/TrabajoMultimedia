@@ -102,6 +102,7 @@ section p {
     height: 30px;
 }
 
+
 section img:not(.logo):not(.nintendo) {
     max-width: 100%;
     border-radius: 8px;
