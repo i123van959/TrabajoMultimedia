@@ -19,6 +19,7 @@
     color: red;
     text-align: center;
     padding: 1rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 1024px) {
@@ -228,3 +229,69 @@ section video {
     border-radius: 10px;
 }
 
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #000;
+        animation: zoomIn 0.3s ease;
+    }
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#audio, #bso {
+    padding: 50px 20px;
+}
+
+.audio-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.audio-item p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Un gris clarito que combine */
+}
