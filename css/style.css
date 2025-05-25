@@ -55,7 +55,6 @@ body {
 }
 
 
-/*TODAS LAS SECCIONES*/
 section:not(.portada):not(.nintendo) {
     padding: 80px 20px;
     margin: 0 auto;
@@ -65,7 +64,6 @@ section:not(.portada):not(.nintendo) {
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* PORTADA INICIAL*/
 .portada {
     height: 95vh;
     width: auto;
@@ -74,12 +72,11 @@ section:not(.portada):not(.nintendo) {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    overflow: hidden; /*Para que no aparezca el borde*/
+    overflow: hidden;
     object-fit: contain;
     display: block;
 }
 
-/* Logo Nintendo*/
 .nintendo {
     width: 100px !important;
     height: auto;
@@ -87,7 +84,6 @@ section:not(.portada):not(.nintendo) {
     margin: 20px auto;
 }
     
-/*TITULOS*/
 section h2 {
     font-size: 2em;
     text-align: center;
@@ -95,7 +91,6 @@ section h2 {
     color: #1a1a1a;
 }
 
-/*PARRAFOS*/
 section p {
     font-size: 1.1em;
     color: #333;
@@ -103,12 +98,10 @@ section p {
     text-align: justify;
 }
 
-/*SEPARADOR ENTRE SECCIONES*/
 .separador {
     height: 30px;
 }
 
-/* IMÁGENES */
 section img:not(.logo):not(.nintendo) {
     max-width: 100%;
     border-radius: 8px;
@@ -156,7 +149,7 @@ section img:not(.logo):not(.nintendo) {
 }
 
     .slider-track img {
-        width: calc((100% - 40px) / 3); /* 3 imágenes con espacio */
+        width: calc((100% - 40px) / 3);
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
@@ -188,7 +181,6 @@ section img:not(.logo):not(.nintendo) {
         right: 10px;
     }
 
-/* VIDEO */
 section video {
     width: 100%;
     border-radius: 8px;
@@ -215,7 +207,6 @@ section video {
         height: 100%;
     }
 
-/*SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -293,5 +284,5 @@ section video {
 audio {
     width: 100%;
     border-radius: 8px;
-    background-color: #f0f0f0; /* Un gris clarito que combine */
+    background-color: #f0f0f0;
 }
